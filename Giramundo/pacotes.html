@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pacotes de Viagens</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 80px;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img.giramundo/logo.gif" alt="logo" class="img-fluid" width="100" height="80%">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serviços.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar destino ..."
+                        aria-label="Pesquisar">
+                    <button class="btn btn-outline-primary" type="submit">
+                        <i class="bi bi-search"></i> <!-- Ícone de pesquisa do Bootstrap -->
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Cabeçalho -->
+    <header class="container my-4">
+        <h2 class="text-center text-md-start">Nossos Pacotes de Viagens</h2>
+        <p class="lead text-muted text-center text-md-start">A melhor viagem você encontra aqui, destinos inspiradores
+            ao seu alcance</p>
+    </header>
+
+    <!-- Pacotes disponíveis -->
+    <main>
+        <div class="container" id="pacotes">
+            <h3 class="pacotes-tittle text-center">Pacotes disponíveis</h3>
+            <div class="row">
+
+                <!-- Card 1: Egito -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/Egito-1.png" class="card-img-top" alt="Egito">
+                    <div class="card-body">
+                        <h5 class="card-title">Egito</h5>
+                        <p class="card-text">Pacote 5 noites Egito Hotel</p>
+                        <p class="card-text">R$ 12.355 ou 10x 1.300</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 2: Barcelona -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/barcelona.jpg" class="card-img-top" alt="Barcelona">
+                    <div class="card-body">
+                        <h5 class="card-title">Barcelona</h5>
+                        <p class="card-text">Pacote 3 noites Resort Milão</p>
+                        <p class="card-text">R$ 8.950 ou 10x 935</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i>Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 3: Orlando Disney -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/dysney.png" class="card-img-top" alt="Disney">
+                    <div class="card-body">
+                        <h5 class="card-title">Orlando Disney</h5>
+                        <p class="card-text">Pacote 5 noites Orlando Resorts</p>
+                        <p class="card-text">R$ 9.230 ou 10x 1.000</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da
+                                manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i>Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 4: Lisboa -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/lisboa1.jpg" class="card-img-top" alt="Lisboa">
+                    <div class="card-body">
+                        <h5 class="card-title">Lisboa</h5>
+                        <p class="card-text">Pacote 6 noites LisbornHotel</p>
+                        <p class="card-text">R$ 8.230 ou 10x 900</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 5: Paris -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/frança.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">Pacote 5 noites Generator Paris</p>
+                        <p class="card-text">R$ 10.230 ou 10x 1.340</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 6: Londres -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/Londres.jpeg" class="card-img-top" alt="Londres">
+                    <div class="card-body">
+                        <h5 class="card-title">Londres</h5>
+                        <p class="card-text">Pacote 4 noites Britannia London</p>
+                        <p class="card-text">R$ 8.000 ou 10x 867</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 7: Maragogi -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/natal.jpg" class="card-img-top" alt="Maragogi">
+                    <div class="card-body">
+                        <h5 class="card-title">Maragogi</h5>
+                        <p class="card-text">Pacote 5 noites Resort Salinas</p>
+                        <p class="card-text">R$ 7.158 ou 10x 795</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 8: Montevidéu -->
+
+                <div class="card m-3 p-0" style="width: 18rem;">
+                    <img src="img.giramundo/montvideo.jpg" class="card-img-top" alt="Montevidéu">
+                    <div class="card-body">
+                        <h5 class="card-title">Montevidéu</h5>
+                        <p class="card-text">Pacote 7 noites Sofitel Montevidéu</p>
+                        <p class="card-text">R$ 8.923 ou 10x958</p>
+                        <ul>
+                            <li><i class="bi bi-cup-hot text-primary ms-3" style="font-size:1rem"></i> Café da manhã
+                                incluso</li>
+                            <li><i class="bi bi-wifi text-primary ms-3" style="font-size:1rem"></i> Wifi</li>
+                            <li><i class="bi bi-check2-square text-primary ms-3" style="font-size:1rem"></i> Check in
+                                até as 12h</li>
+                        </ul>
+                        <br>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPagamento">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalPagamento" tabindex="-1" role="dialog" aria-labelledby="modalPagamentoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalPagamentoLabel">Formulário de Pagamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <!--Especificações do formulario de pagamento -->
+                        <form>
+
+                            <div class="form-group">
+
+
+                                <div class="mb-3">
+                                    <label for="festa">Escolha a sua data preferida para viagem:</label>
+                                    <input type="date" id="viagem" name="viagem" min="2023-08-01" max="2023-12-31">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" placeholder="Digite seu nome ...">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Digite seu email ..."
+                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                </div>
+
+                                <label for="numeroCartao">Número do Cartão</label>
+                                <input type="text" class="form-control" id="numeroCartao"
+                                    placeholder="1234 5678 9012 3456">
+                            </div>
+                            <div class="form-group">
+                                <label for="nomeTitular">Nome do Titular</label>
+                                <input type="text" class="form-control" id="nomeTitular" placeholder="Nome do Titular">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="dataValidade">Data de Validade</label>
+                                    <input type="text" class="form-control" id="dataValidade" placeholder="MM/AA">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="codigoSeguranca">Código de Segurança</label>
+                                    <input type="text" class="form-control" id="codigoSeguranca" placeholder="CVC">
+                                </div>
+
+                                <div class="row">
+                                    <p>Serviços Disponíveis</p>
+                                    <!-- Primeira coluna com 4 itens -->
+                                    <div class="col-md-6">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item1">
+                                        <label class="form-check-label" for="item1">
+                                            Locação de Veiculos
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item2">
+                                        <label class="form-check-label" for="item2">
+                                            Tour Guiado
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item3">
+                                        <label class="form-check-label" for="item3">
+                                            Fotografia Profissional
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item4">
+                                        <label class="form-check-label" for="item4">
+                                            Aéreos
+                                        </label>
+                                      </div>
+                                    </div>
+                                  
+                                    <!-- Segunda coluna com 4 itens -->
+                                    <div class="col-md-6">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item5">
+                                        <label class="form-check-label" for="item5">
+                                            Hospedagens
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item6">
+                                        <label class="form-check-label" for="item6">
+                                            Cruzeiros
+                                        </label>
+                                      </div>
+                                  
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="item8">
+                                        <label class="form-check-label" for="item8">
+                                            Grupos personalizados
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  
+                                  
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Realizar Pagamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- Rodapé -->
+    <footer class="mt-4 bg-primary text-center text-white p-1">
+        <p><i class="bi bi-c-circle" style="font-size:1rem"></i> Todos os direitos reservados a agência de viagens
+            Giramundo.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-mBoG6D6nY7iZ/P5B1fVplGx4rqqN2GZbbFqN2zT5jrtXLHz7l9p6ZSgxCqzR4HVA"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

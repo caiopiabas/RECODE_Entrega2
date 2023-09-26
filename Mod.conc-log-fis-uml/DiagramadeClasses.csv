@@ -1,0 +1,22 @@
+Id,Nome,Biblioteca de formas,ID da p´ágina,Contido por,Grupo,Origem da linha,Destino da linha,Seta de origem,Seta de destino,Status,Área de texto 1,Área de texto 2,Área de texto 3,Comentários
+1,Documento,,,,,,,,,Rascunho,Diagrama de Classes / agencia-uml,,,
+2,Página,,,,,,,,,,Página 1,,,
+3,Classe,UML,2,,,,,,,,Usuarios,"​- id: int
+- nome: string
+- email: string
+","​+ getPedidos():
+List<Pedidos>",
+4,Classe,UML,2,,,,,,,,PacotesViagem,"​- id: int
+- nomeDoPacote: string
+ - descricao: string
+ - destino: string
+ - preco: decimal
+- dataDePartida: date
+- duracao: int",,
+5,Classe,UML,2,,,,,,,,Pedidos,"​- dataCompra: datetime
+- id: int
+-  usuarioId: int
+- pacoteId: int","​+ getPacotes():
+List<Pacotes_De_Viagens>",
+6,Linha,,2,,,3,5,None,Equilateral Arrow,,1,0..*,,
+7,Linha,,2,,,5,4,None,Equilateral Arrow,,1,1,,
